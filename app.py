@@ -4,7 +4,7 @@ import pickle
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # This will enable CORS for all routes
+CORS(app, origins='*')  # This will enable CORS for all routes
 
 # Load the model
 model = pickle.load(open("model.pkl", "rb"))
