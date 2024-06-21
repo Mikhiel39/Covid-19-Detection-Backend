@@ -26,10 +26,10 @@ def predict():
         # Prepare the response
         if prediction == 1:
             response = {
-                "prediction_text": "You are a Covid Patient, Kindly go to your nearby Hospital"}
+                "prediction_text": "You could be a Covid Patient, Kindly go to your nearby Hospital"}
         else:
             response = {
-                "prediction_text": "You are not a Covid Patient, but kindly go out for necessary reasons."}
+                "prediction_text": "You are not a Covid Patient, but Kindly go out for only necessary reasons."}
         
         return jsonify(response)
     
